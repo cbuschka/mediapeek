@@ -29,7 +29,7 @@ master = parse(response)
 
 def urlByRez(master):
   for entry in master:
-    if re.match('.*RESOLUTION=512x288.*', entry['params']) is not None:
+    if re.match('.*RESOLUTION=960x540.*', entry['params']) is not None:
       return entry['data']
 
   return None
